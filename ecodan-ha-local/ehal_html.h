@@ -321,7 +321,11 @@ namespace ehal
     </tr>
     <tr>
         <td>Heating/Cooling Mode:</td>
-        <td>{{mode_heating_cooling}}</td>
+        <td>{{z1_mode_heating_cooling}}</td>
+    </tr>
+    <tr>
+        <td>Heating/Cooling Mode:</td>
+        <td>{{z2_mode_heating_cooling}}</td>
     </tr>
     <tr>
         <td>DHW Mode:</td>
