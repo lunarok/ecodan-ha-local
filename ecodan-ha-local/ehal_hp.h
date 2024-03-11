@@ -71,7 +71,7 @@ namespace ehal::hp
         bool HolidayMode;
         bool DhwTimerMode;
         DhwMode HotWaterMode;
-        HpMode HeatingCoolingMode;
+        HpMode Zone1HeatingCoolingMode;
 
         // Efficiency
         uint8_t CompressorFrequency;
@@ -89,7 +89,7 @@ namespace ehal::hp
             switch (Power)
             {
                 case PowerMode::ON:
-                    switch (HeatingCoolingMode)
+                    switch (Zone1HeatingCoolingMode)
                     {
                       case HpMode::HEAT_ROOM_TEMP:
                           [[fallthrough]]
