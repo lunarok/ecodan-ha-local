@@ -216,9 +216,14 @@ namespace ehal::hp
             HotWaterMode = static_cast<DhwMode>(mode);
         }
 
-        void set_heating_cooling_mode(uint8_t mode)
+        void set_zone1_heating_cooling_mode(uint8_t mode)
         {
-            HeatingCoolingMode = static_cast<HpMode>(mode);
+            Zone1HeatingCoolingMode = static_cast<HpMode>(mode);
+        }
+
+        void set_zone2_heating_cooling_mode(uint8_t mode)
+        {
+            Zone2HeatingCoolingMode = static_cast<HpMode>(mode);
         }
 
         void lock()
