@@ -534,7 +534,8 @@ namespace ehal::hp
                 status.set_power_mode(res[3]);
                 status.set_operation_mode(res[4]);
                 status.set_dhw_mode(res[5]);
-                status.set_heating_cooling_mode(res[6]);
+                status.set_zone1_heating_cooling_mode(res[6]);
+                status.set_zone2_heating_cooling_mode(res[7]);
                 status.DhwFlowTemperatureSetPoint = res.get_float16(8);
                 status.RadiatorFlowTemperatureSetPoint = res.get_float16(12);
                 break;
