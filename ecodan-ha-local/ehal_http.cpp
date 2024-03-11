@@ -406,7 +406,8 @@ namespace ehal::http
             page.replace(F("{{defrost}}"), bool_to_emoji(status.DefrostActive));
             page.replace(F("{{dhw_forced}}"), bool_to_emoji(status.DhwForcedActive));
             page.replace(F("{{mode_dhw_timer}}"), bool_to_emoji(status.DhwTimerMode));
-            page.replace(F("{{mode_heating_cooling}}"), status.hp_mode_as_string());
+            page.replace(F("{{z1_mode_heating_cooling}}"), status.z1hp_mode_as_string());
+            page.replace(F("{{z2_mode_heating_cooling}}"), status.z2hp_mode_as_string());
             page.replace(F("{{mode_dhw}}"), status.dhw_mode_as_string());
 
             page.replace(F("{{min_flow_temp}}"), String(status.MinimumFlowTemperature));
